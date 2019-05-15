@@ -9,7 +9,7 @@
 @section('content')
     @include('layouts.front.home-slider')
 
-    @if($cat1->products->isNotEmpty())
+    {{--@if($cat1->products->isNotEmpty())
         <section class="new-product t100 home">
             <div class="container">
                 <div class="section-title b50">
@@ -20,7 +20,7 @@
             </div>
         </section>
     @endif
-    <hr>
+    <hr>--}}
     @if($cat2->products->isNotEmpty())
         <div class="container">
             <div class="section-title b100">
@@ -31,5 +31,4 @@
         </div>
     @endif
     <hr />
-    @include('mailchimp::mailchimp')
 @endsection
